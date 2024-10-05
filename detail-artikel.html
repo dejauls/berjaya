@@ -1,279 +1,250 @@
-<!DOCTYPE html>
-<html lang="en" class="bg-black">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="{{ article.author }}">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="{{ article.meta_description }}">
-    <meta name="keywords" content="{{ article.meta_keywords }}">
-    <meta property="og:title" content="{{ article.meta_title }}">
-    <meta property="og:description" content="{{ article.meta_description }}">
-    <meta property="og:image" content="{{ article.image }}">
-    <meta property="og:url" content="{{ request.url }}">
-    <meta property="og:type" content="article">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ article.meta_title }}">
-    <meta name="twitter:description" content="{{ article.meta_description }}">
-    <meta name="twitter:image" content="{{ article.image }}">
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="icon" href="/img/logoberjaya-putih.png" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" />
-    <title>{{ article.meta_title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body class="bg-zinc-800 overflow-x-hidden">
-    <div id="wrapper">
-        <section class="relative bg-fixed w-screen bg-cover bg-center">
-            <div class="absolute top-0 left-0 w-full h-0 bg-gradient-to-t from-gray-800 via-gray-800/60 to-transparent">
-                <nav
-                    class="fixed z-50 bg-gradient-to-b from-black via-gray-800/60 to-transparent md:bg-transparent flex p-5 md:p-20 justify-between items-center w-full gap-5">
-                    <label for="check-mobilenav" class="flex flex-col min-w-10 max-w-20 cursor-pointer md:hidden">
-                        <input type="checkbox" id="check-mobilenav" class="peer hidden" />
-                        <span
-                            class="bg-stone-100 rounded-[10px] h-[3.5px] my-[3px] transition-transform duration-[0.4s] ease-custom w-1/2 peer-checked:origin-bottom peer-checked:rotate-45 peer-checked:translate-x-[8px]"></span>
-                        <span
-                            class="bg-stone-100 rounded-[10px] h-[3.5px] my-[3px] transition-transform duration-[0.4s] ease-custom w-full peer-checked:origin-top peer-checked:-rotate-45"></span>
-                        <span
-                            class="bg-stone-100 rounded-[10px] h-[3.5px] my-[3px] transition-transform duration-[0.4s] ease-custom w-3/4 peer-checked:origin-bottom peer-checked:w-1/2 peer-checked:translate-x-[30px] peer-checked:-translate-y-[11px] peer-checked:rotate-45"></span>
-                    </label>
-                    <ul class="hidden md:flex justify-start gap-5 lg:gap-10 text-xl text-stone-100">
-                        <li class="relative group">
-                            <a href="/" class="font-semibold duration-500">HOME</a>
-                            <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
-                            </div>
-                        </li>
-                        <li class="relative group">
-                            <a href="/about" class="font-semibold duration-500">ABOUT</a>
-                            <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
-                            </div>
-                        </li>
-                        <li class="relative group">
-                            <a href="/proyek" class="font-semibold duration-500">PROYEK</a>
-                            <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
-                            </div>
-                        </li>
-                        <li class="relative group">
-                            <a href="/artikel" class="font-semibold duration-500">ARTIKEL</a>
-                            <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
-                            </div>
-                        </li>
-                        <li class="relative group">
-                            <a href="#contact" class="font-semibold duration-500">CONTACT</a>
-                            <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
-                            </div>
-                        </li>
-                    </ul>
-                    <div id="brand"
-                        class="text-3xl font-bold text-stone-900 transform transition duration-300 ease-in-out hover:scale-110">
-                        <a href="index.html" class="flex items-center">
-                            <img src="/static/img/logobar.png" alt="Reclea Brick Logo"
-                                class="max-w-20 sm:max-w-32 shadow-lg" />
-                            <span class="sr-only">Reclea Brick</span>
-                        </a>
-                    </div>
-                </nav>
-                <!-- <div class="flex justify-center items-center mt-20 md:mt-40">
-                    <h2 class="text-stone-50 text-left font-play-serif font-bold text-4xl lg:text-[80px] md:text-[64px] sm:text-[64px] leading-tight"
-                        data-aos="zoom-y-out" data-aos-delay="150">
-                        <span>Artikel</span>
-                    </h2>
-                </div> -->
-            </div>
-        </section>
-
-
-        <section class="bg-gradient-to-t from-black via-gray-800 to-gray-800 dark:bg-gray-900 p-5 md:p-20">
-            <div class="mb-10 mt-20">
-                <h2 class="text-stone-50 text-left font-play-serif font-bold text-3xl lg:text-[68px] md:text-[56px] sm:text-[56px] leading-tight"
-                    data-aos="zoom-y-out" data-aos-delay="150">
-                    <span>{{ article.title }}</span>
-                </h2>
-            </div>
-            <div>
-                <div class="relative w-full mb-5 overflow-hidden">
-                    <div class="w-full max-h-96 overflow-hidden flex justify-center items-center">
-                        <img src="{{ article.image }}" alt="" class="w-full object-cover">
-                        <div class="absolute bottom-0 left-0 p-4 text-sm text-white">Source: {{ article.source }}</div>
-                    </div>
-                </div>
-                <div class="flex gap-5 md:h-1/4 items-center mb-10">
-                    <img src="https://avatar.iran.liara.run/public/1" class="size-8 rounded-full" alt="">
-                    <div class="flex flex-col">
-                        <div class="text-slate-200 text-sm">{{ article.author }}</div>
-                        <div class="text-sm text-stone-400 font-light">{{ article.date }}</div>
-                    </div>
-                </div>
-                <div class="flex flex-wrap md:flex-nowrap gap-10">
-                    <div class="basis-full md:basis-2/3">
-                        <article class="mb-5 prose prose-sm md:prose-base prose-invert">{{ article.content | safe }}
-                        </article>
-                    </div>
-                    <div class="h-full sticky top-44 px-10 basis-full md:basis-1/3 rounded-xl flex flex-col gap-4 ">
-                        <hr class="block md:hidden mb-10">
-                        <div class="flex flex-wrap justify-center gap-2 mb-4 text-center mt-0 md:mt-12">
-                            <a href="{{ url_for('homes') }}"
-                                class="inline-block px-4 py-2 bg-zinc-400 text-white rounded">All</a>
-                            <a href="{{ url_for('category', category_name='otomotif') }}"
-                                class="inline-block px-4 py-2 bg-zinc-400 text-white rounded">Otomotif</a>
-                            <a href="{{ url_for('category', category_name='konstruksi') }}"
-                                class="inline-block px-4 py-2 bg-zinc-400 text-white rounded">Konstruksi</a>
-                            <a href="{{ url_for('category', category_name='interior') }}"
-                                class="inline-block px-4 py-2 bg-zinc-400 text-white rounded">Interior</a>
-                            <a href="{{ url_for('category', category_name='exterior') }}"
-                                class="inline-block px-4 py-2 bg-zinc-400 text-white rounded">Exterior</a>
-                            <a href="{{ url_for('category', category_name='alat-alat-unik') }}"
-                                class="inline-block px-4 py-2 bg-zinc-400 text-white rounded">Alat-alat Unik</a>
-                        </div>
-                        <div class="mb-10 md:mb-0 p-0 md:p-5">
-                            <div class="font-semibold text-stone-50 font-montserrat mb-5">Most Viewed</div>
-                            <ul class="flex flex-col gap-2">
-                                <li class="group hover:bg-stone-950/50 duration-300">
-                                    <a href="/artikel-bata-hitam-reclea-sudah-SNI.html" class="flex flex-col gap-1">
-                                        <div class="text-stone-200 group-hover:text-white">Batu Bata Hitam Reclea Brick
-                                            Penuhi Standar Keamanan dan Syarat SNI</div>
-                                        <div class="text-stone-500 text-sm">Interior | 27 Mei 2024</div>
-                                    </a>
-                                </li>
-                                <li class="group hover:bg-stone-950/50 duration-300">
-                                    <a href="/artikel-bata-hitam-reclea-sudah-SNI.html" class="flex flex-col gap-1">
-                                        <div class="text-stone-200 group-hover:text-white">Batu Bata Hitam Reclea Brick
-                                            Penuhi Standar Keamanan dan Syarat SNI</div>
-                                        <div class="text-stone-500 text-sm">Interior | 27 Mei 2024</div>
-                                    </a>
-                                </li>
-                                <!-- Add more list items as needed -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <div class="px-5 md:px-20 mx-auto opacity-15">
-            <hr class="">
+<section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 mt-28">
+        <div class="w-full max-h-96 overflow-hidden mb-8">
+            <img src="/src/img/sayur1.png" alt="Artikel Image" class="w-full h-full object-cover">
         </div>
-
-
-        <section class="bg-black p-5 md:p-20">
-            <div class="prose prose-invert mb-10">
-                <h1>Artikel Lainnya</h1>
-            </div>
-            <div class="mx-auto grid gap-5 lg:grid-cols-4 relative z-10 p-2 md:p-10">
-                {% for article in articles %}
-                <a class="overflow-hidden" href="{{ url_for('article_detail', slug=article['slug']) }}">
-                    <div class="w-full h-48 min-h-fit overflow-hidden flex justify-center items-center">
-                        <img src="{{ article.image }}" alt="" class="w-full">
-                    </div>
-                    <div class="mb-3">
-                        <h6 class="line-clamp-2 text-stone-100 mt-1 font-medium text-base md:text-3xl">{{ article.title
-                            }}</h6>
-                        <div class="line-clamp-3 text-stone-300 text-sm md:text-lg">
-                            {{ article.content | render_html }}
-                        </div>
-                    </div>
-                    <div class="flex gap-5 items-center mb-5">
-                        <img src="https://avatar.iran.liara.run/public/1" class="size-8 rounded-full" alt="">
-                        <div class="flex flex-col gap-1">
-                            <div class="text-slate-200 text-sm">{{ article.author }}</div>
-                            <div class="text-sm text-stone-400 font-light">{{ article.date }}</div>
-                        </div>
-                    </div>
-                </a>
-                {% endfor %}
-            </div>
-        </section>
-
-        <hr>
+    
+        <h1 class="text-2xl sm:text-4xl font-bold text-gray-900 mb-4 text-center sm:text-left">
+            Apakah Pupuk Aman untuk Sayuran? Yuk, Kita Cari Tahu!
+        </h1>
+    
+        <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start mb-6 text-gray-500">
+            <p class="text-[10px] md:text-sm mb-2 sm:mb-0">
+                Dipublikasikan pada: <span class="font-semibold">5 Oktober 2024</span>
+            </p>
+            <p class="text-[10px] md:text-sm">
+                Penulis: <span class="font-semibold">Agung Pratama</span>
+            </p>
+        </div>
+    
+        <div class="prose prose-lg max-w-none text-gray-700" id="section-2">
+            <p class="mb-6">
+                Pernah nggak sih, kamu mikir, “Sebenernya pupuk yang kita pakai di sayuran itu aman nggak, ya?” Nah, pertanyaan ini sering banget muncul, terutama buat kamu yang suka nanem sayur di rumah atau yang peduli sama kesehatan keluarga. Di artikel ini, kita bakal bahas dengan bahasa santai, biar kamu nggak bingung.
+            </p>
+            <h2 class="text-xl font-semibold">Pupuk Itu Apa Sih?</h2>
+            <p class="mb-6">
+                Oke, sebelum ngomongin lebih jauh soal aman atau nggaknya, kita perlu tau dulu pupuk itu apa. Jadi, pupuk adalah makanan buat tanaman. Sama kayak kita butuh makan biar tumbuh sehat, tanaman juga butuh nutrisi dari pupuk biar tumbuh subur. Tapi, nggak semua pupuk sama lho. Ada yang alami (organik), ada juga yang buatan (anorganik).
+            </p>
+            <h2 class="text-xl font-semibold">Pupuk Organik vs Anorganik, Mana yang Lebih Aman?</h2>
+            <p class="mb-6">
+                Ini nih yang sering jadi bahan diskusi. Pupuk organik biasanya berasal dari bahan-bahan alami kayak kompos, kotoran hewan, atau sisa-sisa tumbuhan. Karena bahan dasarnya alami, pupuk organik dianggap lebih aman buat tanaman, termasuk sayuran. Selain itu, organik juga baik buat kesehatan tanah jangka panjang.
+            </p>
+            <p class="mb-6">
+                Sedangkan pupuk anorganik atau buatan, itu hasil dari campuran bahan kimia. Pupuk ini efektif banget buat cepetin pertumbuhan tanaman. Tapi, kalau nggak hati-hati, residunya bisa tertinggal di tanah atau bahkan di sayuran yang kita makan. Nah, di sinilah muncul kekhawatiran soal keamanan.
+            </p>
+            <h2 class="text-xl font-semibold">Lalu, Aman atau Gak Nih?</h2>
+            <p class="mb-6">
+                Sebenernya, baik pupuk organik maupun anorganik bisa aman, asal penggunaannya sesuai aturan. Untuk pupuk organik, kamu tetep perlu memastikan bahan-bahannya bebas dari penyakit atau zat berbahaya. Misalnya, kotoran hewan yang belum terfermentasi dengan baik bisa membawa bakteri yang gak bagus buat tanaman dan kesehatan manusia.
+            </p>
+            <p class="mb-6">
+                Untuk pupuk anorganik, biasanya udah ada petunjuk pemakaian yang jelas di kemasannya. Pake secukupnya, sesuai dosis yang dianjurkan, dan jangan berlebihan. Selain itu, pastiin juga kamu ngasih jeda waktu yang cukup antara penggunaan pupuk dan masa panen. Tujuannya biar residu kimia dari pupuk sempet terurai dulu sebelum sayuran kamu dikonsumsi.
+            </p>
+            <h2 class="text-xl font-semibold mb-4">Tips Aman Pakai Pupuk untuk Sayuran :</h2>
+            <p class="mb-6">
+                1. <strong>Pilih Pupuk yang Teruji</strong><br>
+                Kalau beli pupuk, pastiin pilih produk yang udah punya izin edar dan teruji aman. Jangan asal beli ya!
+            </p>
+            <p class="mb-6">
+                2. <strong>Gunakan Sesuai Aturan</strong><br>
+                Jangan terlalu banyak atau terlalu sering pakai pupuk, terutama yang anorganik. Lebih nggak selalu lebih baik, lho!
+            </p>
+            <p class="mb-6">
+                3. <strong>Perhatikan Waktu Pemakaian</strong><br>
+                Usahain kasih jarak waktu yang cukup antara pemupukan dan panen. Minimal 1-2 minggu sebelum panen, stop dulu pemupukan.
+            </p>
+            <p class="mb-6">
+                4. <strong>Cuci Sayuran dengan Bersih</strong><br>
+                Apapun pupuk yang kamu pakai, cucilah sayuran sebelum dikonsumsi. Ini penting banget buat ngilangin sisa-sisa pupuk yang mungkin masih nempel.
+            </p>
+            
+            <p class="mb-6">
+                Jadi, apakah pupuk aman buat sayuran? Jawabannya: bisa aman, asalkan digunakan dengan benar. Pupuk organik cenderung lebih aman, tapi pupuk anorganik juga nggak masalah asal digunakan sesuai aturan. Yang paling penting, selalu berhati-hati dalam pemakaian, dan tetap perhatikan kebersihan sayuran sebelum dikonsumsi.
+            </p>
+            <p class="mb-6">Happy gardening, guys! Semoga sayuranmu tumbuh subur dan sehat ya!</p>
+        </div>
     </div>
+    
 
-    <hr class="outline outline-black">
-    <footer id="contact" class="bg-white py-10 md:py-16">
-        <div class="container max-w-screen-xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ">
-                <!-- Kolom 1: Logo -->
-                <div class="justify-center lg:justify-start">
-                    <img src="/img/berjaya-md.png" alt="Image" class="w-full lg:w-7/6">
-                </div>
-
-                <!-- Kolom 2: Sitemap -->
-                <div class="text-center lg:text-left lg:ml-32">
-                    <h4 class="font-semibold text-gray-900 text-2xl mb-6 ">Sitemap</h4>
-                    <ul class="space-y-4">
-                        <li>
-                            <a href="#"
-                                class="font-light text-gray-900 text-lg md:text-xl hover:text-gray-800 transition ease-in-out duration-300">Home</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="font-light text-gray-900 text-lg md:text-xl hover:text-gray-800 transition ease-in-out duration-300">About</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="font-light text-gray-900 text-lg md:text-xl hover:text-gray-800 transition ease-in-out duration-300">Services</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="font-light text-gray-900 text-lg md:text-xl hover:text-gray-800 transition ease-in-out duration-300">Product</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="font-light text-gray-900 text-lg md:text-xl hover:text-gray-800 transition ease-in-out duration-300">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Kolom 3: Social Media dan Info -->
-                <div class="text-center lg:text-left">
-                    <p class="font-semibold text-gray-900 text-lg md:text-xl mb-6">Get your Organic Food Mat Here</p>
-                    <div class="flex justify-center lg:justify-start space-x-5">
-                        <a href="https://www.facebook.com/berjayaupih"
-                            class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
-                            <i data-feather="facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/berjayaupih"
-                            class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
-                            <i data-feather="instagram"></i>
-                        </a>
-                        <a href="https://wa.me/+6281370035488"
-                            class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-6 h-6 fill-current">
-                                <path
-                                    d="M16 0C7.16 0 0 7.16 0 16c0 2.82 0.74 5.46 2.14 7.83l-2.21 8.17 8.42-2.2C11.31 31.3 13.93 32 16 32c8.84 0 16-7.16 16-16S24.84 0 16 0zm0 29.12c-2.58 0-5.06-0.69-7.23-2.02l-0.52-0.31-5.01 1.31 1.35-4.88-0.33-0.54C3.07 21.13 2.37 18.66 2.37 16 2.37 8.82 8.19 3 16 3s13.63 5.82 13.63 13-5.82 13.12-13.63 13.12zM23.5 19.41c-0.39-0.2-2.33-1.15-2.7-1.28s-0.63-0.2-0.9 0.2c-0.26 0.39-1.03 1.28-1.27 1.54-0.23 0.26-0.46 0.29-0.85 0.1-0.39-0.2-1.63-0.6-3.1-1.92-1.15-1.03-1.92-2.29-2.15-2.68s-0.02-0.59 0.18-0.79c0.18-0.18 0.39-0.46 0.59-0.69s0.26-0.39 0.39-0.65c0.13-0.26 0.06-0.49-0.03-0.69s-0.9-2.14-1.24-2.96c-0.33-0.79-0.67-0.68-0.9-0.69h-0.77c-0.26 0-0.67 0.1-1.03 0.49s-1.35 1.32-1.35 3.21 1.38 3.72 1.57 3.98c0.2 0.26 2.71 4.16 6.56 5.84 0.92 0.39 1.64 0.62 2.2 0.79 0.93 0.3 1.78 0.26 2.46 0.16 0.75-0.1 2.33-0.95 2.66-1.87 0.33-0.92 0.33-1.71 0.23-1.87-0.1-0.17-0.36-0.26-0.75-0.46z" />
-                            </svg>
-                        </a>
+    <!-- Most Viewed Section (1/3) -->
+    <aside class="lg:col-span-1 mt-0 md:mt-56">
+        <hr class="border-0 h-[2px] bg-gray-300 my-4">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Most Viewed</h2>
+        <hr class="border-0 h-[2px] bg-gray-300 my-4">
+        <div class="mb-4">
+            <a href="detail-artikel.html" class="block">
+                <div class="flex space-x-4 mb-4">
+                    <img src="/src/img/petani4.jpg" alt="Article 1" class="w-32 h-24 object-cover">
+                    <div>
+                        <h3 class="text-sm font-semibold">Pupuk Terbaik untuk Hasil Panen yang Optimal di Sumatera Utara</h3>
+                        <p class="text-xs text-gray-500">27 September 2024</p>
                     </div>
+                </div>
+            </a>
+            <hr class="border-0 h-[2px] bg-gray-300 my-4">
+        
+            <a href="detail-artikel.html" class="block">
+                <div class="flex space-x-4 mb-4">
+                    <img src="/src/img/sayur1.png" alt="Article 2" class="w-32 h-24 object-cover">
+                    <div>
+                        <h3 class="text-sm font-semibold">Apakah Pupuk Aman Untuk Sayuran? Yuk, Kita Cari Tahu</h3>
+                        <p class="text-xs text-gray-500">05 Sep 2024</p>
+                    </div>
+                </div>
+            </a>
+            <hr class="border-0 h-[2px] bg-gray-300 my-4">
+        
+            <a href="detail-artikel.html" class="block">
+                <div class="flex space-x-4 mb-4">
+                    <img src="/src/img/petani4.jpg" alt="Article 3" class="w-32 h-24 object-cover">
+                    <div>
+                        <h3 class="text-sm font-semibold">Teknik Penyemprotan Pupuk Cair yang Efektif untuk Tanaman Padi</h3>
+                        <p class="text-xs text-gray-500">10 Sep 2024</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    </aside>
+</section>
+
+
+
+<hr class="border-0 h-1 bg-gray-300 my-4">
+<section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+    <hr class="w-12 h-1 bg-green-600 mb-2 mx-auto">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8">ARTIKEL LAINNYA</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+        <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+            <p class="text-[10px] md:text-sm text-gray-500 pl-2">27 September 2024</p>
+            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                Pupuk Terbaik untuk Hasil Panen yang Optimal di Sumatera Utara
+            </h3>
+            <hr class="mb-0 md:mb-2">
+            <div class="flex items-center p-2 mb-0 md:mb-4">
+                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                <div>
+                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
                 </div>
             </div>
         </div>
-    </footer>
-
-    <div class="px-5 flex justify-center">
-        <hr class="bg-black h-[2px] w-full">
-    </div>
-
-    <!-- footer -->
-    <div class="w-full bg-white">
-        <div class="container mx-auto py-5 flex items-center ">
-
-            <span class="font-medium text-black mx-auto">Copyright © 2024 Berjaya Upih.</span>
-
+        <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                berita terbaru ini bikin heboh rakyat yang membaca
+            </h3>
+            <hr class="mb-0 md:mb-2">
+            <div class="flex items-center p-2 mb-0 md:mb-4">
+                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                <div>
+                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                </div>
+            </div>
         </div>
+        <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                berita terbaru ini bikin heboh rakyat yang membaca
+            </h3>
+            <hr class="mb-0 md:mb-2">
+            <div class="flex items-center p-2 mb-0 md:mb-4">
+                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                <div>
+                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                berita terbaru ini bikin heboh rakyat yang membaca
+            </h3>
+            <hr class="mb-0 md:mb-2">
+            <div class="flex items-center p-2 mb-0 md:mb-4">
+                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                <div>
+                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                berita terbaru ini bikin heboh rakyat yang membaca
+            </h3>
+            <hr class="mb-0 md:mb-2">
+            <div class="flex items-center p-2 mb-0 md:mb-4">
+                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                <div>
+                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block bg-white shadow-md rounded-lg"
+            onclick="window.location.href='detail-artikel.html';">
+            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                berita terbaru ini bikin heboh rakyat yang membaca
+            </h3>
+            <hr class="mb-0 md:mb-2">
+            <div class="flex items-center p-2 mb-0 md:mb-4">
+                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                <div>
+                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block bg-white shadow-md rounded-lg"
+            onclick="window.location.href='detail-artikel.html';">
+            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                berita terbaru ini bikin heboh rakyat yang membaca
+            </h3>
+            <hr class="mb-0 md:mb-2">
+            <div class="flex items-center p-2 mb-0 md:mb-4">
+                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                <div>
+                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block bg-white shadow-md rounded-lg"
+            onclick="window.location.href='detail-artikel.html';">
+            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                berita terbaru ini bikin heboh rakyat yang membaca
+            </h3>
+            <hr class="mb-0 md:mb-2">
+            <div class="flex items-center p-2 mb-0 md:mb-4">
+                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                <div>
+                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                </div>
+            </div>
+        </div>
+        <a href="artikel.html"
+            class="block bg-greeno shadow-md rounded-lg flex flex-col justify-center items-center p-4 cursor-pointer hover hover:bg-custom-green">
+            <i class="fas fa-arrow-right text-5xl text-white mb-4 bounce-right-infinite"></i>
+            <h3 class="text-xs md:text-lg font-bold text-white text-center">Lihat Semua Artikel</h3>
+        </a>
     </div>
-
-    <script>
-        feather.replace();
-     </script>
-</body>     
+</section>
 
 
-</html>
+<hr class="border-0 h-1 bg-gray-300 my-4">
