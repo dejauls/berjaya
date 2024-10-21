@@ -1,250 +1,513 @@
-<section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
-    <div class="lg:col-span-2 mt-28">
-        <div class="w-full max-h-96 overflow-hidden mb-8">
-            <img src="/src/img/sayur1.png" alt="Artikel Image" class="w-full h-full object-cover">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Berjaya Upih</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" href="/img/berjaya-md.png" type="image/x-icon">
+    <!-- Or you can use a PNG -->
+    <link rel="icon" href="/img/berjaya-md.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<body class="font-sans">
+
+    <section>
+        <nav class="w-full fixed top-0 bg-krim z-10  ">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <img class="w-16 ml-4" src="./img/upihlogobulat.png" alt="" />
+                    <span class="text-2xl font-bold text-indigo-900 hidden md:block  ">Berjaya Upih</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-lg uppercase">
+                    <li class="hover:text-gray-500">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#product">Product</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <!-- <img id="moon" src="./img/moon.png" class="hidden md:block w-5 cursor-pointer" alt="" /> -->
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20 mr-4">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu"
+                    class="hidden bg-krim absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-black text-center">
+                    <li>
+                        <a id="hLink" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#product">Product</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8 mb-4">
+        <div class="lg:col-span-2 mt-28">
+            <div class="w-full max-h-96 overflow-hidden mb-8">
+                <img src="/src/img/sayur1.png" alt="Artikel Image" class="w-full h-full object-cover">
+            </div>
+
+            <h1 class="text-2xl sm:text-4xl font-bold text-gray-900 mb-4 text-center sm:text-left">
+                Apakah Pupuk Aman untuk Sayuran? Yuk, Kita Cari Tahu!
+            </h1>
+
+            <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start mb-6 text-gray-500">
+                <p class="text-[10px] md:text-sm mb-2 sm:mb-0">
+                    Dipublikasikan pada: <span class="font-semibold">5 Oktober 2024</span>
+                </p>
+                <p class="text-[10px] md:text-sm">
+                    Penulis: <span class="font-semibold">Agung Pratama</span>
+                </p>
+            </div>
+
+            <div class="max-w-none text-gray-700 my-4">
+                <p class="mb-6">
+                    Pernah nggak sih, kamu mikir, “Sebenernya pupuk yang kita pakai di sayuran itu aman nggak, ya?” Nah,
+                    pertanyaan ini sering banget muncul, terutama buat kamu yang suka nanem sayur di rumah atau yang
+                    peduli
+                    sama kesehatan keluarga. Di artikel ini, kita bakal bahas dengan bahasa santai, biar kamu nggak
+                    bingung.
+                </p>
+                <h2 class="text-xl font-semibold">Pupuk Itu Apa Sih?</h2>
+                <p class="mb-6">
+                    Oke, sebelum ngomongin lebih jauh soal aman atau nggaknya, kita perlu tau dulu pupuk itu apa. Jadi,
+                    pupuk adalah makanan buat tanaman. Sama kayak kita butuh makan biar tumbuh sehat, tanaman juga butuh
+                    nutrisi dari pupuk biar tumbuh subur. Tapi, nggak semua pupuk sama lho. Ada yang alami (organik),
+                    ada
+                    juga yang buatan (anorganik).
+                </p>
+                <h2 class="text-xl font-semibold">Pupuk Organik vs Anorganik, Mana yang Lebih Aman?</h2>
+                <p class="mb-6">
+                    Ini nih yang sering jadi bahan diskusi. Pupuk organik biasanya berasal dari bahan-bahan alami kayak
+                    kompos, kotoran hewan, atau sisa-sisa tumbuhan. Karena bahan dasarnya alami, pupuk organik dianggap
+                    lebih aman buat tanaman, termasuk sayuran. Selain itu, organik juga baik buat kesehatan tanah jangka
+                    panjang.
+                </p>
+                <p class="mb-6">
+                    Sedangkan pupuk anorganik atau buatan, itu hasil dari campuran bahan kimia. Pupuk ini efektif banget
+                    buat cepetin pertumbuhan tanaman. Tapi, kalau nggak hati-hati, residunya bisa tertinggal di tanah
+                    atau
+                    bahkan di sayuran yang kita makan. Nah, di sinilah muncul kekhawatiran soal keamanan.
+                </p>
+                <h2 class="text-xl font-semibold">Lalu, Aman atau Gak Nih?</h2>
+                <p class="mb-6">
+                    Sebenernya, baik pupuk organik maupun anorganik bisa aman, asal penggunaannya sesuai aturan. Untuk
+                    pupuk
+                    organik, kamu tetep perlu memastikan bahan-bahannya bebas dari penyakit atau zat berbahaya.
+                    Misalnya,
+                    kotoran hewan yang belum terfermentasi dengan baik bisa membawa bakteri yang gak bagus buat tanaman
+                    dan
+                    kesehatan manusia.
+                </p>
+                <p class="mb-6">
+                    Untuk pupuk anorganik, biasanya udah ada petunjuk pemakaian yang jelas di kemasannya. Pake
+                    secukupnya,
+                    sesuai dosis yang dianjurkan, dan jangan berlebihan. Selain itu, pastiin juga kamu ngasih jeda waktu
+                    yang cukup antara penggunaan pupuk dan masa panen. Tujuannya biar residu kimia dari pupuk sempet
+                    terurai
+                    dulu sebelum sayuran kamu dikonsumsi.
+                </p>
+                <h2 class="text-xl font-semibold mb-4">Tips Aman Pakai Pupuk untuk Sayuran :</h2>
+                <p class="mb-6">
+                    1. <strong>Pilih Pupuk yang Teruji</strong><br>
+                    Kalau beli pupuk, pastiin pilih produk yang udah punya izin edar dan teruji aman. Jangan asal beli
+                    ya!
+                </p>
+                <p class="mb-6">
+                    2. <strong>Gunakan Sesuai Aturan</strong><br>
+                    Jangan terlalu banyak atau terlalu sering pakai pupuk, terutama yang anorganik. Lebih nggak selalu
+                    lebih
+                    baik, lho!
+                </p>
+                <p class="mb-6">
+                    3. <strong>Perhatikan Waktu Pemakaian</strong><br>
+                    Usahain kasih jarak waktu yang cukup antara pemupukan dan panen. Minimal 1-2 minggu sebelum panen,
+                    stop
+                    dulu pemupukan.
+                </p>
+                <p class="mb-6">
+                    4. <strong>Cuci Sayuran dengan Bersih</strong><br>
+                    Apapun pupuk yang kamu pakai, cucilah sayuran sebelum dikonsumsi. Ini penting banget buat ngilangin
+                    sisa-sisa pupuk yang mungkin masih nempel.
+                </p>
+
+                <p class="mb-6">
+                    Jadi, apakah pupuk aman buat sayuran? Jawabannya: bisa aman, asalkan digunakan dengan benar. Pupuk
+                    organik cenderung lebih aman, tapi pupuk anorganik juga nggak masalah asal digunakan sesuai aturan.
+                    Yang
+                    paling penting, selalu berhati-hati dalam pemakaian, dan tetap perhatikan kebersihan sayuran sebelum
+                    dikonsumsi.
+                </p>
+                <p class="mb-6">Happy gardening, guys! Semoga sayuranmu tumbuh subur dan sehat ya!</p>
+            </div>
         </div>
-    
-        <h1 class="text-2xl sm:text-4xl font-bold text-gray-900 mb-4 text-center sm:text-left">
-            Apakah Pupuk Aman untuk Sayuran? Yuk, Kita Cari Tahu!
-        </h1>
-    
-        <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start mb-6 text-gray-500">
-            <p class="text-[10px] md:text-sm mb-2 sm:mb-0">
-                Dipublikasikan pada: <span class="font-semibold">5 Oktober 2024</span>
-            </p>
-            <p class="text-[10px] md:text-sm">
-                Penulis: <span class="font-semibold">Agung Pratama</span>
-            </p>
+
+
+        <!-- Most Viewed Section (1/3) -->
+        <aside class="lg:col-span-1 mt-0 md:mt-56">
+            <hr class="border-0 h-[2px] bg-gray-300 my-4">
+            <h2 class="text-xl font-bold text-gray-900 mb-4">Most Viewed</h2>
+            <hr class="border-0 h-[2px] bg-gray-300 my-4">
+            <div class="mb-4">
+                <a href="detail-artikel.html" class="block">
+                    <div class="flex space-x-4 mb-4">
+                        <img src="/src/img/petani4.jpg" alt="Article 1" class="w-32 h-24 object-cover">
+                        <div>
+                            <h3 class="text-sm font-semibold">Pupuk Terbaik untuk Hasil Panen yang Optimal di Sumatera
+                                Utara
+                            </h3>
+                            <p class="text-xs text-gray-500">27 September 2024</p>
+                        </div>
+                    </div>
+                </a>
+                <hr class="border-0 h-[2px] bg-gray-300 my-4">
+
+                <a href="detail-artikel.html" class="block">
+                    <div class="flex space-x-4 mb-4">
+                        <img src="/src/img/sayur1.png" alt="Article 2" class="w-32 h-24 object-cover">
+                        <div>
+                            <h3 class="text-sm font-semibold">Apakah Pupuk Aman Untuk Sayuran? Yuk, Kita Cari Tahu</h3>
+                            <p class="text-xs text-gray-500">05 Sep 2024</p>
+                        </div>
+                    </div>
+                </a>
+                <hr class="border-0 h-[2px] bg-gray-300 my-4">
+
+                <a href="detail-artikel.html" class="block">
+                    <div class="flex space-x-4 mb-4">
+                        <img src="/src/img/petani4.jpg" alt="Article 3" class="w-32 h-24 object-cover">
+                        <div>
+                            <h3 class="text-sm font-semibold">Teknik Penyemprotan Pupuk Cair yang Efektif untuk Tanaman
+                                Padi
+                            </h3>
+                            <p class="text-xs text-gray-500">10 Sep 2024</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </aside>
+    </section>
+
+
+
+    <hr class="border-0 h-1 bg-gray-300 my-4 ">
+    <section class="max-w-7xl mx-auto mt-8 p-4 sm:p-6 lg:p-8">
+        <hr class="w-12 h-1 bg-green-600 mb-2 mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8">ARTIKEL LAINNYA</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">27 September 2024</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    Pupuk Terbaik untuk Hasil Panen yang Optimal di Sumatera Utara
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block bg-white shadow-md rounded-lg"
+                onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block bg-white shadow-md rounded-lg"
+                onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block bg-white shadow-md rounded-lg"
+                onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <a href="artikel.html"
+                class="block bg-greeno shadow-md rounded-lg flex flex-col justify-center items-center p-4 cursor-pointer hover hover:bg-custom-green">
+                <i class="fas fa-arrow-right text-5xl text-white mb-4 bounce-right-infinite"></i>
+                <h3 class="text-xs md:text-lg font-bold text-white text-center">Lihat Semua Artikel</h3>
+            </a>
         </div>
-    
-        <div class="prose prose-lg max-w-none text-gray-700" id="section-2">
-            <p class="mb-6">
-                Pernah nggak sih, kamu mikir, “Sebenernya pupuk yang kita pakai di sayuran itu aman nggak, ya?” Nah, pertanyaan ini sering banget muncul, terutama buat kamu yang suka nanem sayur di rumah atau yang peduli sama kesehatan keluarga. Di artikel ini, kita bakal bahas dengan bahasa santai, biar kamu nggak bingung.
-            </p>
-            <h2 class="text-xl font-semibold">Pupuk Itu Apa Sih?</h2>
-            <p class="mb-6">
-                Oke, sebelum ngomongin lebih jauh soal aman atau nggaknya, kita perlu tau dulu pupuk itu apa. Jadi, pupuk adalah makanan buat tanaman. Sama kayak kita butuh makan biar tumbuh sehat, tanaman juga butuh nutrisi dari pupuk biar tumbuh subur. Tapi, nggak semua pupuk sama lho. Ada yang alami (organik), ada juga yang buatan (anorganik).
-            </p>
-            <h2 class="text-xl font-semibold">Pupuk Organik vs Anorganik, Mana yang Lebih Aman?</h2>
-            <p class="mb-6">
-                Ini nih yang sering jadi bahan diskusi. Pupuk organik biasanya berasal dari bahan-bahan alami kayak kompos, kotoran hewan, atau sisa-sisa tumbuhan. Karena bahan dasarnya alami, pupuk organik dianggap lebih aman buat tanaman, termasuk sayuran. Selain itu, organik juga baik buat kesehatan tanah jangka panjang.
-            </p>
-            <p class="mb-6">
-                Sedangkan pupuk anorganik atau buatan, itu hasil dari campuran bahan kimia. Pupuk ini efektif banget buat cepetin pertumbuhan tanaman. Tapi, kalau nggak hati-hati, residunya bisa tertinggal di tanah atau bahkan di sayuran yang kita makan. Nah, di sinilah muncul kekhawatiran soal keamanan.
-            </p>
-            <h2 class="text-xl font-semibold">Lalu, Aman atau Gak Nih?</h2>
-            <p class="mb-6">
-                Sebenernya, baik pupuk organik maupun anorganik bisa aman, asal penggunaannya sesuai aturan. Untuk pupuk organik, kamu tetep perlu memastikan bahan-bahannya bebas dari penyakit atau zat berbahaya. Misalnya, kotoran hewan yang belum terfermentasi dengan baik bisa membawa bakteri yang gak bagus buat tanaman dan kesehatan manusia.
-            </p>
-            <p class="mb-6">
-                Untuk pupuk anorganik, biasanya udah ada petunjuk pemakaian yang jelas di kemasannya. Pake secukupnya, sesuai dosis yang dianjurkan, dan jangan berlebihan. Selain itu, pastiin juga kamu ngasih jeda waktu yang cukup antara penggunaan pupuk dan masa panen. Tujuannya biar residu kimia dari pupuk sempet terurai dulu sebelum sayuran kamu dikonsumsi.
-            </p>
-            <h2 class="text-xl font-semibold mb-4">Tips Aman Pakai Pupuk untuk Sayuran :</h2>
-            <p class="mb-6">
-                1. <strong>Pilih Pupuk yang Teruji</strong><br>
-                Kalau beli pupuk, pastiin pilih produk yang udah punya izin edar dan teruji aman. Jangan asal beli ya!
-            </p>
-            <p class="mb-6">
-                2. <strong>Gunakan Sesuai Aturan</strong><br>
-                Jangan terlalu banyak atau terlalu sering pakai pupuk, terutama yang anorganik. Lebih nggak selalu lebih baik, lho!
-            </p>
-            <p class="mb-6">
-                3. <strong>Perhatikan Waktu Pemakaian</strong><br>
-                Usahain kasih jarak waktu yang cukup antara pemupukan dan panen. Minimal 1-2 minggu sebelum panen, stop dulu pemupukan.
-            </p>
-            <p class="mb-6">
-                4. <strong>Cuci Sayuran dengan Bersih</strong><br>
-                Apapun pupuk yang kamu pakai, cucilah sayuran sebelum dikonsumsi. Ini penting banget buat ngilangin sisa-sisa pupuk yang mungkin masih nempel.
-            </p>
-            
-            <p class="mb-6">
-                Jadi, apakah pupuk aman buat sayuran? Jawabannya: bisa aman, asalkan digunakan dengan benar. Pupuk organik cenderung lebih aman, tapi pupuk anorganik juga nggak masalah asal digunakan sesuai aturan. Yang paling penting, selalu berhati-hati dalam pemakaian, dan tetap perhatikan kebersihan sayuran sebelum dikonsumsi.
-            </p>
-            <p class="mb-6">Happy gardening, guys! Semoga sayuranmu tumbuh subur dan sehat ya!</p>
+    </section>
+
+
+    <hr class="border-0 h-1 bg-gray-300 my-4">
+
+
+
+    <hr class="outline outline-black">
+    <footer id="contact" class="bg-white py-10 md:py-16">
+        <div class="container max-w-screen-xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ">
+                <!-- Kolom 1: Logo -->
+                <div class="justify-center lg:justify-start">
+                    <img src="/img/berjaya-md.png" alt="Image" class="w-full lg:w-7/6 ">
+                </div>
+
+                <!-- Kolom 2: Sitemap -->
+                <div class="text-center lg:text-left lg:ml-32">
+                    <h4 class="font-semibold text-gray-900 text-2xl mb-6 ">Sitemap</h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#"
+                                class="font-light text-gray-900 text-lg md:text-xl hover:text-gray-800 transition ease-in-out duration-300">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-light text-gray-900 text-lg md:text-xl hover:text-gray-800 transition ease-in-out duration-300">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-light text-gray-900 text-lg md:text-xl hover:text-gray-800 transition ease-in-out duration-300">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-light text-gray-900 text-lg md:text-xl hover:text-gray-800 transition ease-in-out duration-300">Product</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-light text-gray-900 text-lg md:text-xl hover:text-gray-800 transition ease-in-out duration-300">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 3: Social Media dan Info -->
+                <div class="text-center lg:text-left">
+                    <p class="font-semibold text-gray-900 text-lg md:text-2xl mb-6 mt-6 md:mt-0">Get your Organic Food
+                        Mat Here
+                    </p>
+                    <div class="flex justify-center   space-x-5">
+                        <a href="https://www.facebook.com/berjayaupih"
+                            class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/berjayaupih"
+                            class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="https://wa.me/+6281370035488"
+                            class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-6 h-6 fill-current">
+                                <path
+                                    d="M16 0C7.16 0 0 7.16 0 16c0 2.82 0.74 5.46 2.14 7.83l-2.21 8.17 8.42-2.2C11.31 31.3 13.93 32 16 32c8.84 0 16-7.16 16-16S24.84 0 16 0zm0 29.12c-2.58 0-5.06-0.69-7.23-2.02l-0.52-0.31-5.01 1.31 1.35-4.88-0.33-0.54C3.07 21.13 2.37 18.66 2.37 16 2.37 8.82 8.19 3 16 3s13.63 5.82 13.63 13-5.82 13.12-13.63 13.12zM23.5 19.41c-0.39-0.2-2.33-1.15-2.7-1.28s-0.63-0.2-0.9 0.2c-0.26 0.39-1.03 1.28-1.27 1.54-0.23 0.26-0.46 0.29-0.85 0.1-0.39-0.2-1.63-0.6-3.1-1.92-1.15-1.03-1.92-2.29-2.15-2.68s-0.02-0.59 0.18-0.79c0.18-0.18 0.39-0.46 0.59-0.69s0.26-0.39 0.39-0.65c0.13-0.26 0.06-0.49-0.03-0.69s-0.9-2.14-1.24-2.96c-0.33-0.79-0.67-0.68-0.9-0.69h-0.77c-0.26 0-0.67 0.1-1.03 0.49s-1.35 1.32-1.35 3.21 1.38 3.72 1.57 3.98c0.2 0.26 2.71 4.16 6.56 5.84 0.92 0.39 1.64 0.62 2.2 0.79 0.93 0.3 1.78 0.26 2.46 0.16 0.75-0.1 2.33-0.95 2.66-1.87 0.33-0.92 0.33-1.71 0.23-1.87-0.1-0.17-0.36-0.26-0.75-0.46z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="px-5 flex justify-center">
+        <hr class="bg-black h-[2px] w-full">
+    </div>
+
+    <!-- footer -->
+    <div class="w-full bg-white">
+        <div class="container mx-auto py-5 flex items-center ">
+
+            <span class="font-medium text-black mx-auto">Copyright © 2024 Berjaya Upih.</span>
+
         </div>
     </div>
-    
-
-    <!-- Most Viewed Section (1/3) -->
-    <aside class="lg:col-span-1 mt-0 md:mt-56">
-        <hr class="border-0 h-[2px] bg-gray-300 my-4">
-        <h2 class="text-xl font-bold text-gray-900 mb-4">Most Viewed</h2>
-        <hr class="border-0 h-[2px] bg-gray-300 my-4">
-        <div class="mb-4">
-            <a href="detail-artikel.html" class="block">
-                <div class="flex space-x-4 mb-4">
-                    <img src="/src/img/petani4.jpg" alt="Article 1" class="w-32 h-24 object-cover">
-                    <div>
-                        <h3 class="text-sm font-semibold">Pupuk Terbaik untuk Hasil Panen yang Optimal di Sumatera Utara</h3>
-                        <p class="text-xs text-gray-500">27 September 2024</p>
-                    </div>
-                </div>
-            </a>
-            <hr class="border-0 h-[2px] bg-gray-300 my-4">
-        
-            <a href="detail-artikel.html" class="block">
-                <div class="flex space-x-4 mb-4">
-                    <img src="/src/img/sayur1.png" alt="Article 2" class="w-32 h-24 object-cover">
-                    <div>
-                        <h3 class="text-sm font-semibold">Apakah Pupuk Aman Untuk Sayuran? Yuk, Kita Cari Tahu</h3>
-                        <p class="text-xs text-gray-500">05 Sep 2024</p>
-                    </div>
-                </div>
-            </a>
-            <hr class="border-0 h-[2px] bg-gray-300 my-4">
-        
-            <a href="detail-artikel.html" class="block">
-                <div class="flex space-x-4 mb-4">
-                    <img src="/src/img/petani4.jpg" alt="Article 3" class="w-32 h-24 object-cover">
-                    <div>
-                        <h3 class="text-sm font-semibold">Teknik Penyemprotan Pupuk Cair yang Efektif untuk Tanaman Padi</h3>
-                        <p class="text-xs text-gray-500">10 Sep 2024</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        
-    </aside>
-</section>
 
 
+    <script>
+        document.getElementById('whatsappButton').addEventListener('click', function () {
+            var form = document.getElementById('whatsappForm');
+            if (form.classList.contains('hidden')) {
+                form.classList.remove('hidden');
+                setTimeout(function () {
+                    form.classList.remove('opacity-0', 'transform', 'translate-y-4');
+                }, 10);
+            } else {
+                form.classList.add('opacity-0', 'transform', 'translate-y-4');
+                setTimeout(function () {
+                    form.classList.add('hidden');
+                }, 300);
+            }
+        });
 
-<hr class="border-0 h-1 bg-gray-300 my-4">
-<section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
-    <hr class="w-12 h-1 bg-green-600 mb-2 mx-auto">
-    <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8">ARTIKEL LAINNYA</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        document.getElementById('sendButton').addEventListener('click', function () {
+            var message = document.getElementById('message').value;
+            if (message.trim() !== '') {
+                var whatsappURL = 'https://api.whatsapp.com/send?phone=6281370035488&text=' + encodeURIComponent(message);
+                window.open(whatsappURL, '_blank');
+            } else {
+                alert('Pesan tidak boleh kosong');
+            }
+        });
 
-        <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
-            <p class="text-[10px] md:text-sm text-gray-500 pl-2">27 September 2024</p>
-            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                Pupuk Terbaik untuk Hasil Panen yang Optimal di Sumatera Utara
-            </h3>
-            <hr class="mb-0 md:mb-2">
-            <div class="flex items-center p-2 mb-0 md:mb-4">
-                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                <div>
-                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                </div>
-            </div>
-        </div>
-        <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
-            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
-            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                berita terbaru ini bikin heboh rakyat yang membaca
-            </h3>
-            <hr class="mb-0 md:mb-2">
-            <div class="flex items-center p-2 mb-0 md:mb-4">
-                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                <div>
-                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                </div>
-            </div>
-        </div>
-        <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
-            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
-            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                berita terbaru ini bikin heboh rakyat yang membaca
-            </h3>
-            <hr class="mb-0 md:mb-2">
-            <div class="flex items-center p-2 mb-0 md:mb-4">
-                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                <div>
-                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                </div>
-            </div>
-        </div>
-        <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
-            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
-            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                berita terbaru ini bikin heboh rakyat yang membaca
-            </h3>
-            <hr class="mb-0 md:mb-2">
-            <div class="flex items-center p-2 mb-0 md:mb-4">
-                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                <div>
-                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                </div>
-            </div>
-        </div>
-        <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
-            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
-            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                berita terbaru ini bikin heboh rakyat yang membaca
-            </h3>
-            <hr class="mb-0 md:mb-2">
-            <div class="flex items-center p-2 mb-0 md:mb-4">
-                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                <div>
-                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                </div>
-            </div>
-        </div>
-        <div class="hidden md:block bg-white shadow-md rounded-lg"
-            onclick="window.location.href='detail-artikel.html';">
-            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
-            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
-            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                berita terbaru ini bikin heboh rakyat yang membaca
-            </h3>
-            <hr class="mb-0 md:mb-2">
-            <div class="flex items-center p-2 mb-0 md:mb-4">
-                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                <div>
-                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                </div>
-            </div>
-        </div>
-        <div class="hidden md:block bg-white shadow-md rounded-lg"
-            onclick="window.location.href='detail-artikel.html';">
-            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
-            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
-            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                berita terbaru ini bikin heboh rakyat yang membaca
-            </h3>
-            <hr class="mb-0 md:mb-2">
-            <div class="flex items-center p-2 mb-0 md:mb-4">
-                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                <div>
-                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                </div>
-            </div>
-        </div>
-        <div class="hidden md:block bg-white shadow-md rounded-lg"
-            onclick="window.location.href='detail-artikel.html';">
-            <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
-            <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
-            <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                berita terbaru ini bikin heboh rakyat yang membaca
-            </h3>
-            <hr class="mb-0 md:mb-2">
-            <div class="flex items-center p-2 mb-0 md:mb-4">
-                <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                <div>
-                    <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                    <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                </div>
-            </div>
-        </div>
-        <a href="artikel.html"
-            class="block bg-greeno shadow-md rounded-lg flex flex-col justify-center items-center p-4 cursor-pointer hover hover:bg-custom-green">
-            <i class="fas fa-arrow-right text-5xl text-white mb-4 bounce-right-infinite"></i>
-            <h3 class="text-xs md:text-lg font-bold text-white text-center">Lihat Semua Artikel</h3>
-        </a>
-    </div>
-</section>
+        window.addEventListener('scroll', function () {
+            var section2 = document.getElementById('section-2');
+            var whatsappIcon = document.getElementById('whatsappIcon');
 
 
-<hr class="border-0 h-1 bg-gray-300 my-4">
+            var section2Start = section2.offsetTop;
+            var section2Half = section2Start + (section2.offsetHeight / 2);
+
+
+            var scrollPos = window.scrollY + window.innerHeight;
+
+            if (scrollPos > section2Half) {
+                whatsappIcon.classList.remove('opacity-0', 'translate-y-4');
+            } else {
+                whatsappIcon.classList.add('opacity-0', 'translate-y-4');
+            }
+        });
+    </script>
+
+    <script src="./app.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            feather.replace();
+        });
+    </script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+
+</body>
+
+</html>
