@@ -7,8 +7,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Berjaya Upih</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Top Upih Producing Countries: A Natural Solution to Replace Plastic from the Tropics</title>
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="icon" href="/img/berjaya-md.png" type="image/x-icon">
     <!-- Or you can use a PNG -->
@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 </head>
 
 <style>
@@ -26,26 +27,26 @@
 
 <body class="font-sans">
     <nav class="w-full fixed top-0 bg-white z-50 border-b-2 border-gray-800 shadow-md">
-        <div class="container mx-auto   flex items-center justify-between">
+        <div class="container mx-auto flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <img class="w-16 ml-4" src="./img/upihlogobulat.png" alt="" />
+                <img class="w-16 ml-4" src="../img/upihlogobulat.png" alt="" />
                 <span class="text-2xl font-bold text-indigo-900 hidden md:block">Berjaya Upih</span>
             </div>
             <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-lg uppercase">
                 <li class="hover:text-gray-500">
-                    <a href="#">Home</a>
+                    <a href="/index.html">Home</a>
                 </li>
                 <li class="hover:text-gray-500">
-                    <a href="#about">About</a>
+                    <a href="/index.html#about">About</a>
                 </li>
                 <li class="hover:text-gray-500">
-                    <a href="#services">Services</a>
+                    <a href="/index.html#services">Services</a>
                 </li>
                 <li class="hover:text-gray-500">
-                    <a href="#product">Product</a>
+                    <a href="/index.html#product">Product</a>
                 </li>
                 <li class="hover:text-gray-500">
-                    <a href="#contact">Contact</a>
+                    <a href="/index.html#contact">Contact</a>
                 </li>
             </ul>
             <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20 mr-4">
@@ -56,211 +57,269 @@
             <ul id="menu"
                 class="hidden bg-krim absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-black text-center">
                 <li>
-                    <a id="hLink" href="#">Home</a>
+                    <a id="hLink" href="/index.html">Home</a>
                 </li>
                 <li>
-                    <a id="hLink" href="#about">About</a>
+                    <a class="hLink" href="/index.html#about">About</a>
                 </li>
                 <li>
-                    <a id="hLink" href="#services">Services</a>
+                    <a id="hLink" href="/index.html#services">Services</a>
                 </li>
                 <li>
-                    <a id="hLink" href="#product">Product</a>
+                    <a id="hLink" href="/index.html#product">Product</a>
                 </li>
                 <li>
-                    <a id="hLink" href="#contact">Contact</a>
+                    <a id="hLink" href="/index.html#contact">Contact</a>
                 </li>
             </ul>
         </div>
         <hr>
     </nav>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  ">
 
-        <div id="article-carousel" class="relative max-w-4xl mx-auto pt-4 mb-0 md:mb-12 mt-16">
-            <!-- Article 1 -->
-            <a href="detail-artikel.html" class="block">
-                <div class="article-slide">
-                    <img src="/img/kariupih.jpg" alt="Article Image"
-                        class="w-full h-[250px] sm:h-[350px] md:h-[400px] object-cover rounded-lg shadow-lg">
-                    <div
-                        class="absolute bottom-0 left-0 bg-white bg-opacity-80 text-black px-4 sm:px-6 py-2 sm:py-4 w-2/3">
-                        <h2 class="text-xs sm:text-lg md:text-xl font-bold mb-1 sm:mb-2">
-                            Upih: The Future of Sustainable Tableware
-                        </h2>
-                        <p class="text-[10px] sm:text-sm text-gray-500">17 Sep 2024</p>
-                    </div>
-                </div>
-            </a>
+    <section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 mt-20">
+            <div class="w-full h-96 overflow-hidden mb-8">
+                <img src="/img/upihaw.jpg" alt="Upih Product Image" class="w-full h-full object-cover">
+            </div>
 
-            <!-- Article 2 -->
-            <a href="Upih-The-Future of-Sustainable-Tableware.html" class="block">
-                <div class="article-slide hidden">
-                    <img src="/img/kariupih.jpg" alt="Article Image"
-                        class="w-full h-[250px] sm:h-[350px] md:h-[400px] object-cover rounded-lg shadow-lg">
-                    <div
-                        class="absolute bottom-0 left-0 bg-white bg-opacity-80 text-black px-4 sm:px-6 py-2 sm:py-4 w-2/3">
-                        <h2 class="text-xs sm:text-lg md:text-xl font-bold mb-1 sm:mb-2">Judul Artikel Kedua</h2>
-                        <p class="text-[10px] sm:text-sm text-gray-500">18 Sep 2024</p>
-                    </div>
-                </div>
-            </a>
+            <h1 class="text-2xl sm:text-4xl font-bold text-gray-900 mb-4 text-center sm:text-left">
+                Top Upih Producing Countries: A Natural Solution to Replace Plastic from the Tropics
+            </h1>
 
-            <!-- Article 3 -->
-            <a href="detail-artikel.html" class="block">
-                <div class="article-slide hidden">
-                    <img src="/img/upih1.jpg" alt="Article Image"
-                        class="w-full h-[250px] sm:h-[350px] md:h-[400px] object-cover rounded-lg shadow-lg">
-                    <div
-                        class="absolute bottom-0 left-0 bg-white bg-opacity-80 text-black px-4 sm:px-6 py-2 sm:py-4 w-2/3">
-                        <h2 class="text-xs sm:text-lg md:text-xl font-bold mb-1 sm:mb-2">Judul Artikel Ketiga</h2>
-                        <p class="text-[10px] sm:text-sm text-gray-500">19 Sep 2024</p>
-                    </div>
-                </div>
-            </a>
+            <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start mb-6 text-gray-500">
+                <p class="text-[10px] md:text-sm mb-2 sm:mb-0">
+                    Published on: <span class="font-semibold">9 October 2024</span>
+                </p>
+                <p class="text-[10px] md:text-sm">
+                    Author: <span class="font-semibold">Ben</span>
+                </p>
+            </div>
 
-            <!-- Article 4 -->
-            <a href="detail-artikel.html" class="block">
-                <div class="article-slide hidden">
-                    <img src="/img/upihaw.jpg" alt="Article Image"
-                        class="w-full h-[250px] sm:h-[350px] md:h-[400px] object-cover rounded-lg shadow-lg">
-                    <div
-                        class="absolute bottom-0 left-0 bg-white bg-opacity-80 text-black px-4 sm:px-6 py-2 sm:py-4 w-2/3">
-                        <h2 class="text-xs sm:text-lg md:text-xl font-bold mb-1 sm:mb-2">Judul Artikel Keempat</h2>
-                        <p class="text-[10px] sm:text-sm text-gray-500">20 Sep 2024</p>
-                    </div>
-                </div>
-            </a>
+            <div class="prose prose-lg max-w-none text-gray-700" id="section-2">
+                <p class="mb-4">
+                    <strong>Upih or areca palm sheath</strong> is predominantly produced in tropical countries where
+                    areca palm trees
+                    (Areca catechu) grow abundantly. The leading producers of upih include:
+                </p>
+                <h2 class="text-xl font-semibold">1. Indonesia
+                </h2>
+                <p class="mb-4">
+                    Indonesia, with its tropical climate and extensive areca palm plantations, is another significant
+                    producer of upih. Many farmers across regions like Sumatra and Kalimantan utilize areca palm sheaths
+                    to create sustainable products such as plates and food containers.
+                </p>
+                <h2 class="text-xl font-semibold">2. India
+                </h2>
+                <p class="mb-4">
+                    India is one of the largest producers and exporters of areca palm sheaths. The southern states like
+                    Kerala, Tamil Nadu, and Karnataka are particularly known for their vast areca palm plantations. In
+                    India, upih is widely used to meet both local and international demand as an eco-friendly
+                    alternative to disposable plastic plates.
+                </p>
+                <h2 class="text-xl font-semibold">2. Bangladesh
+                </h2>
+                <p class="mb-4">
+                    Bangladesh also ranks among the key producers of upih. The country’s favorable climate allows areca
+                    palms to grow easily, making the sheaths readily available for processing into eco-friendly
+                    products.
+                </p>
+                <h2 class="text-xl font-semibold">4. Sri Lanka
+                </h2>
+                <p class="mb-6">
+                    Sri Lanka has a long-standing tradition of utilizing areca palms. In addition to their traditional
+                    uses, areca palm sheaths in Sri Lanka are processed into biodegradable products that cater to both
+                    local and global markets.
+                </p>
+                <p class="mb-4">
+                    These countries benefit from the natural abundance of areca palms which thrive in tropical
+                    climates. Producing upih not only supports local economies but also reduces environmental waste by
+                    offering a sustainable, natural alternative to single-use plastic.
+                </p>
+            </div>
         </div>
 
-        <div class="flex justify-center space-x-2 mt-4">
-            <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" data-slide="0"></div>
-            <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" data-slide="1"></div>
-            <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" data-slide="2"></div>
-            <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" data-slide="3"></div>
+
+
+        <!-- Most Viewed Section (1/3) -->
+        <aside class="lg:col-span-1 mt-0 md:mt-16">
+            <hr class="border-0 h-[2px] bg-gray-300 my-4">
+            <h2 class="text-xl font-bold text-gray-900 mb-4">Most Viewed</h2>
+            <hr class="border-0 h-[2px] bg-gray-300 my-4">
+            <div class="mb-4">
+                <a href="Upih-The-Future of-Sustainable-Tableware.html" class="block">
+                    <div class="flex space-x-4 mb-4">
+                        <img src="/img/bupih3.jpg" alt="Article 1" class="w-32 h-24 object-cover">
+                        <div>
+                            <h3 class="text-sm font-semibold">Upih: The Future of Sustainable Tableware</h3>
+                            <p class="text-xs text-gray-500">17 July 2024</p>
+                        </div>
+                    </div>
+                </a>
+                <hr class="border-0 h-[2px] bg-gray-300 my-4">
+
+                <a href="Why-Are-Eco-Friendly-Products-Important-for-the-Future.html" class="block">
+                    <div class="flex space-x-4 mb-4">
+                        <img src="/img/polution.jpg" alt="Article 2" class="w-32 h-24 object-cover">
+                        <div>
+                            <h3 class="text-sm font-semibold">Why Are Eco-Friendly Products Important for the Future?
+                            </h3>
+                            <p class="text-xs text-gray-500">28 July 2024</p>
+                        </div>
+                    </div>
+                </a>
+                <hr class="border-0 h-[2px] bg-gray-300 my-4">
+
+                <a href="What-Is-Areca-Palm-Sheath-and-How-Is-It-Used.html" class="block">
+                    <div class="flex space-x-4 mb-4">
+                        <img src="/img/upihlagi.jpg" alt="Article 3" class="w-28 h-24 object-cover">
+                        <div>
+                            <h3 class="text-sm font-semibold">What Is Areca Palm Sheath and How Is It Used?</h3>
+                            <p class="text-xs text-gray-500">3 August 2024</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </aside>
+    </section>
+
+
+
+    <hr class="border-0 h-1 bg-gray-300 my-4">
+    <section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        <hr class="w-12 h-1 bg-green-600 mb-2 mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8">MORE ARTICLE'S</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
+
+            <div class="bg-white shadow-md rounded-lg"
+                onclick="window.location.href='/article/Upih-The-Future of-Sustainable-Tableware.html';">
+                <img src="/img/bupih3.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
+
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">17 July 2024</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    Upih: The Future of Sustainable Tableware
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Ben</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg"
+                onclick="window.location.href='/article/Why-Are-Eco-Friendly-Products-Important-for-the-Future.html';">
+                <img src="/img/polution.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
+
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">28 July 2024</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    Why Are Eco-Friendly Products Important for the Future?
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Ben</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg"
+                onclick="window.location.href='/article/What-Is-Areca-Palm-Sheath-and-How-Is-It-Used.html';">
+                <img src="/img/upihlagi.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
+
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">3 August 2024</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    What Is Areca Palm Sheath and How Is It Used?
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Ben</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg"
+                onclick="window.location.href='/article/Eco-Friendly-Product-Trends-This-Year.html';">
+                <img src="/img/ecoproduk.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
+
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">19 August 2024</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    Eco-Friendly Product Trends This Year
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Ben</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden md:block bg-white shadow-md rounded-lg"
+                onclick="window.location.href='/article/Bamboo-A-Versatile-Organic-Material-in-the-Food-Industry.html';">
+                <img src="/img/bambomakan.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
+
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">03 September 2024</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    Bamboo: A Versatile Organic Material in the Food Industry
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Ben</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block bg-white shadow-md rounded-lg"
+                onclick="window.location.href='/article/Areca-Palm-Sheath-Plates-vs-Plastic-Plates-Which-is-Better.html';">
+                <img src="/img/piringupih.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
+
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">18 September 2024</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    Areca Palm Sheath Plates vs. Plastic Plates: Which is Better?
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Ben</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block bg-white shadow-md rounded-lg"
+                onclick="window.location.href='/article/Top-Upih-Producing-Countries-A-Natural-Solution-to-Replace-Plastic-from-the-Tropics.html';">
+                <img src="/img/upihaw.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
+
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">9 October 2024</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    Top Upih Producing Countries: A Natural Solution to Replace Plastic from the Tropics
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 ">
+                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Ben</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <a href="artikel.html"
+                class="block bg-amber-900 shadow-md rounded-lg flex flex-col justify-center items-center p-4 cursor-pointer hover hover:bg-custom-green">
+                <i class="fas fa-arrow-right text-5xl text-white mb-4 bounce-right-infinite"></i>
+                <h3 class="text-xs md:text-lg font-bold text-white text-center">See More Article</h3>
+            </a>
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto">
-        <hr class="border-0 h-1 bg-gray-300 my-4 md:my-8">
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 m-4 md:m-8">
-
-            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-                <img src="/img/bupih3.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
-
-                <p class="text-[10px] md:text-sm text-gray-500 pl-2">27 September 2024</p>
-                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                    Upih: The Future of Sustainable Tableware
-                </h3>
-                <hr class="mb-0 md:mb-2">
-                <div class="flex items-center p-2 mb-0 md:mb-4">
-                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                    <div>
-                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-                <img src="/img/bupih3.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
-
-                <p class="text-[10px] md:text-sm text-gray-500 pl-2">27 September 2024</p>
-                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                    Upih: The Future of Sustainable Tableware
-                </h3>
-                <hr class="mb-0 md:mb-2">
-                <div class="flex items-center p-2 mb-0 md:mb-4">
-                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                    <div>
-                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-                <img src="/img/bupih3.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
-
-                <p class="text-[10px] md:text-sm text-gray-500 pl-2">27 September 2024</p>
-                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                    Upih: The Future of Sustainable Tableware
-                </h3>
-                <hr class="mb-0 md:mb-2">
-                <div class="flex items-center p-2 mb-0 md:mb-4">
-                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                    <div>
-                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-                <img src="/img/bupih3.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
-
-                <p class="text-[10px] md:text-sm text-gray-500 pl-2">27 September 2024</p>
-                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                    Upih: The Future of Sustainable Tableware
-                </h3>
-                <hr class="mb-0 md:mb-2">
-                <div class="flex items-center p-2 mb-0 md:mb-4">
-                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                    <div>
-                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-                <img src="/img/bupih3.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
-
-                <p class="text-[10px] md:text-sm text-gray-500 pl-2">27 September 2024</p>
-                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                    Upih: The Future of Sustainable Tableware
-                </h3>
-                <hr class="mb-0 md:mb-2">
-                <div class="flex items-center p-2 mb-0 md:mb-4">
-                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                    <div>
-                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-                <img src="/img/bupih3.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
-
-                <p class="text-[10px] md:text-sm text-gray-500 pl-2">27 September 2024</p>
-                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                    Upih: The Future of Sustainable Tableware
-                </h3>
-                <hr class="mb-0 md:mb-2">
-                <div class="flex items-center p-2 mb-0 md:mb-4">
-                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                    <div>
-                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
-                <img src="/img/bupih3.jpg" alt="Artikel 3" class="w-full h-48 object-cover rounded-lg mb-4">
-
-                <p class="text-[10px] md:text-sm text-gray-500 pl-2">27 September 2024</p>
-                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
-                    Upih: The Future of Sustainable Tableware
-                </h3>
-                <hr class="mb-0 md:mb-2">
-                <div class="flex items-center p-2 mb-0 md:mb-4">
-                    <img src="/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
-                    <div>
-                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
-                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <hr class="h-2">
 
     <!-- contact -->
     <hr class="outline outline-black">
@@ -304,15 +363,30 @@
                     <p class="font-semibold text-gray-900 text-lg md:text-2xl mb-6 mt-6 md:mt-0">Get your Organic Food
                         Mat Here
                     </p>
-                    <div class="flex justify-center   space-x-5">
+                    <div class="flex justify-center space-x-5">
+                        <!-- Facebook Icon -->
                         <a href="https://www.facebook.com/berjayaupih"
-                            class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
-                            <i data-feather="facebook"></i>
+                            class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-blue-800 hover:text-white transition ease-in-out duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-facebook">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
                         </a>
+
+                        <!-- Instagram Icon -->
                         <a href="https://www.instagram.com/berjayaupih"
-                            class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
-                            <i data-feather="instagram"></i>
+                            class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-red-700 hover:text-white transition ease-in-out duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-instagram">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
                         </a>
+
+                        <!-- WhatsApp Icon -->
                         <a href="https://wa.me/+6281370035488"
                             class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-6 h-6 fill-current">
@@ -321,6 +395,7 @@
                             </svg>
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -354,7 +429,7 @@
         <button id="whatsappButton"
             class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg focus:outline-none sm:p-3">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48"
-                class="sm:w-12  sm:h-12 md:w-16  md:h-16">
+                class="sm:w-12  sm:h-12 ">
                 <path fill="#fff"
                     d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
                 </path>
@@ -394,61 +469,10 @@
     <script src="./app.js"></script>
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            feather.replace();
-        });
-    </script>
+
 
     <script>
         new WOW().init();
-    </script>
-
-    <script>
-        const slides = document.querySelectorAll('.article-slide');
-        const dots = document.querySelectorAll('.dot');
-        let currentSlide = 0;
-        const slideIntervalTime = 5000; // 5 seconds
-
-        function showSlide(slideIndex) {
-            // Hide all slides
-            slides.forEach((slide) => slide.classList.add('hidden'));
-            // Show the selected slide
-            slides[slideIndex].classList.remove('hidden');
-
-            // Update dot styles
-            dots.forEach((dot) => dot.classList.remove('bg-gray-800'));
-            dots[slideIndex].classList.add('bg-gray-800');
-
-            // Update the current slide index
-            currentSlide = slideIndex;
-        }
-
-        // Set up dot click events
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                showSlide(index);  // Show corresponding slide
-                resetSlideInterval();  // Reset the interval when user manually changes the slide
-            });
-        });
-
-        // Function to auto-switch slides every 5 seconds
-        function autoSwitchSlides() {
-            currentSlide = (currentSlide + 1) % slides.length; // Move to the next slide, loop back if at the end
-            showSlide(currentSlide);
-        }
-
-        // Initialize by showing the first slide
-        showSlide(0);
-
-        // Set up automatic slide transition
-        let slideInterval = setInterval(autoSwitchSlides, slideIntervalTime);
-
-        // Reset the interval when a slide is changed manually
-        function resetSlideInterval() {
-            clearInterval(slideInterval);
-            slideInterval = setInterval(autoSwitchSlides, slideIntervalTime);
-        }
     </script>
 
 
