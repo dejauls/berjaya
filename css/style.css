@@ -669,10 +669,6 @@ video {
   margin: 0.25rem;
 }
 
-.m-4{
-  margin: 1rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1740,10 +1736,6 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .sm\:flex-row{
     flex-direction: row;
   }
@@ -1813,10 +1805,6 @@ video {
     top: 25%;
   }
 
-  .md\:m-8{
-    margin: 2rem;
-  }
-
   .md\:my-10{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -1871,10 +1859,6 @@ video {
     height: 3rem;
   }
 
-  .md\:h-16{
-    height: 4rem;
-  }
-
   .md\:h-3\/5{
     height: 60%;
   }
@@ -1897,10 +1881,6 @@ video {
 
   .md\:w-12{
     width: 3rem;
-  }
-
-  .md\:w-16{
-    width: 4rem;
   }
 
   .md\:w-4\/12{
